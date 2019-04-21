@@ -13,4 +13,4 @@ build:
   dockerfile: dockerfile
     
 run:
-  cmd: python3 DeepSpeech.py --n_hidden 2048 --epochs 3 --train_files /data/shared-task/train/train.csv --dev_files  /data/shared-task/dev/dev.csv --test_files /data/shared-task/test/test.csv --learning_rate 0.0001 
+  cmd: python DeepSpeech.py --n_hidden 2048 --epochs 3 --train_files /data/shared-task/train/train.csv --dev_files  /data/shared-task/dev/dev.csv --test_files /data/shared-task/test/test.csv --learning_rate 0.0001 
