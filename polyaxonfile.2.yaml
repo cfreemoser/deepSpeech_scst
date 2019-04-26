@@ -1,0 +1,12 @@
+version: 1
+
+kind: experiment
+
+
+build:
+  dockerfile: dockerfile
+  build_steps:
+    - pip install deepspeech-gpu
+    
+run:
+  cmd: bin/import_cv2.py /data/common-voice

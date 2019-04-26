@@ -1,0 +1,18 @@
+version: 1
+
+kind: experiment
+
+environment:
+  resources:
+    gpu:
+      requests: 1
+      limits: 1
+
+
+build:
+  dockerfile: dockerfile
+  build_steps:
+    - pip install deepspeech-gpu
+    
+run:
+  cmd: for filename in /data/shared-task/test/*.wav; do echo $filename; deepspeech --model "/data/shared-task/output_graph.pb" --alphabet "data/alphabet.txt" --audio $filename; done
