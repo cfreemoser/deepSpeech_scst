@@ -144,7 +144,7 @@ ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64:/usr/loc
 WORKDIR /
 
 # Copy DeepSpeech repo contents to container's /DeepSpeech
-RUN echo 'change me to force rebuild' && git clone https://github.com/mozilla/DeepSpeech.git
+RUN echo 'pleeeeeeeeeeeeassse not!' && git clone https://github.com/mozilla/DeepSpeech.git
 
 WORKDIR /DeepSpeech
 
