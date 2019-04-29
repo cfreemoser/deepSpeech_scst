@@ -13,4 +13,4 @@ build:
   dockerfile: dockerfile
     
 run:
-  cmd: python DeepSpeech.py --n_hidden 2048 --epochs 5 --train_files /data/common-voice/clips/train.csv,/data/shared-task/train_data.csv --dev_files /data/common-voice/clips/dev.csv,/data/shared-task/dev_data.csv --test_files /data/shared-task/test_data.csv --learning_rate 0.0001 --export_dir /data/shared-task/24042019
+  cmd: python DeepSpeech.py --n_hidden 2048 --epochs 5 --train_files /data/common-voice/fixed.csv,/data/shared-task/train_data.csv --dev_files /data/shared-task/dev_data.csv --test_files /data/shared-task/test_data.csv  --learning_rate 0.0001 --export_dir /data/shared-task/24042019
