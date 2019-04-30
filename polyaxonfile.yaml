@@ -8,10 +8,8 @@ environment:
       requests: 2
       limits: 2
 
-# 
-
 build:
-  dockerfile: dockerfile
+  dockerfile: dockerfile_py2
     
 run:
-  cmd: python DeepSpeech.py --alphabet /data/common-voice/alphabet.txt --n_hidden 2048 --epochs 5 --train_files  /data/shared-task/train_data.csv --dev_files /data/common-voice/lol.csv --test_files /data/common-voice/lol.csv  --learning_rate 0.0001 --export_dir /data/shared-task/24042019
+  cmd: python DeepSpeech.py --alphabet /data/common-voice/myalphabet.txt --n_hidden 2048 --epochs 5 --train_files  /data/shared-task/train_data.csv --dev_files /data/common-voice/lol.csv --test_files /data/common-voice/lol.csv  --learning_rate 0.0001 --export_dir /data/shared-task/24042019
